@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>BIG WILLy</title>
+    <title>API Caller</title>
 </head>
 <body>
+    <h1>Call External API</h1>
+    <form method="POST" action="{% url 'call_api' %}">
+        {% csrf_token %}
+        <button type="submit">Call API</button>
+    </form>
 
+    {% if api_data %}
+        <h2>API Response:</h2>
+        <pre>{{ api_data|safe }}</pre>
+    {% endif %}
 </body>
 </html>

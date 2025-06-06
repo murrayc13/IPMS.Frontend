@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7d42af2-88f7-4953-8889-b3c24031ed28" name="Changes" comment="Making the base directory for IPMS.Frontend">
+      <change afterPath="$PROJECT_DIR$/IPMS.Frontend/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IPMS.Frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IPMS.Frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -23,21 +29,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "murrayc13"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;murrayc13&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/murrayc13/IPMS.Frontend.git",
-    "accountId": "8175b7cc-db1c-4f31-b27f-ae68475cad37"
+    "accountId": "3b9c7540-3695-45d7-891b-4b45fabdb352"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2y92IGONkDc6ZeIpnZuHtIsE5J7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,6 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Git/IMPS.Backend",
     "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
