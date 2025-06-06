@@ -2,17 +2,97 @@
 <html>
 <head>
     <title>API Caller</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <h1>Call External API</h1>
-    <form method="POST" action="{% url 'call_api' %}">
+    <form method="POST" action="{% url 'get_minimum_variance' %}">
         {% csrf_token %}
+
+        <label for="asset_info">Asset Information (e.g., [[...], [...]])</label><br>
+        <textarea id="asset_info" name="asset_info" rows="5" cols="60">[[0.08, 0.075, 0.09, 0.065, 0.1, 0.07, 0.085],
+[0.15, 0.12, 0.18, 0.10, 0.20, 0.11, 0.16]]</textarea><br><br>
+
+        <label for="covariance">Covariance Matrix (e.g., [[...], [...], ...])</label><br>
+        <textarea id="covariance" name="covariance" rows="10" cols="60">[[1, 0.8, 0.6, 0.3, 0.7, 0.5, 0.65],
+[0.8, 1, 0.55, 0.4, 0.6, 0.45, 0.5],
+[0.6, 0.55, 1, 0.35, 0.75, 0.5, 0.6],
+[0.3, 0.4, 0.35, 1, 0.25, 0.3, 0.2],
+[0.7, 0.6, 0.75, 0.25, 1, 0.55, 0.65],
+[0.5, 0.45, 0.5, 0.3, 0.55, 1, 0.4],
+[0.65, 0.5, 0.6, 0.2, 0.65, 0.4, 1]]</textarea><br><br>
+
         <button type="submit">Call API</button>
     </form>
 
     {% if api_data %}
         <h2>API Response:</h2>
         <pre>{{ api_data|safe }}</pre>
+    {% endif %}
+
+    {% if graph_point %}
+        <h2>Graph:</h2>
+        <div style="max-width: 500px;">
+            <canvas id="scatterChart"></canvas>
+        </div>
+        <script>
+            const point = {{ graph_point|safe }};
+            const line = {{ graph_line|safe }};
+
+            // Build line data from parallel arrays
+            const linePoints = line[0].map((x, i) => ({
+                x: x,
+                y: line[1][i]
+            }));
+
+            const data = {
+                datasets: [
+                    {
+                        label: 'Optimal Point',
+                        data: [{ x: point[0], y: point[1] }],
+                        backgroundColor: 'blue',
+                        pointRadius: 7,
+                        pointHoverRadius: 10,
+                        showLine: false,
+                        type: 'scatter'
+                    },
+                    {
+                        label: 'Portfolio Frontier',
+                        data: linePoints,
+                        borderColor: 'red',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.1,
+                        showLine: true,
+                        pointRadius: 0,
+                        type: 'line'
+                    }
+                ]
+            };
+
+            const config = {
+                type: 'scatter',
+                data: data,
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Risk'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Return'
+                            }
+                        }
+                    }
+                }
+            };
+
+            new Chart(document.getElementById('scatterChart'), config);
+        </script>
     {% endif %}
 </body>
 </html>
