@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d42af2-88f7-4953-8889-b3c24031ed28" name="Changes" comment="Making the base directory for IPMS.Frontend">
-      <change afterPath="$PROJECT_DIR$/IPMS.Frontend/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IPMS.Frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IPMS.Frontend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/mysite/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="d7d42af2-88f7-4953-8889-b3c24031ed28" name="Changes" comment="Making the base directory for IPMS.Frontend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,12 +28,12 @@
     &quot;assignee&quot;: &quot;murrayc13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/murrayc13/IPMS.Frontend.git",
-    "accountId": "3b9c7540-3695-45d7-891b-4b45fabdb352"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/murrayc13/IPMS.Frontend.git&quot;,
+    &quot;accountId&quot;: &quot;3b9c7540-3695-45d7-891b-4b45fabdb352&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -49,16 +42,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Git/IMPS.Backend",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Git/IMPS.Backend&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749233652910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Making the base directory for IPMS.Frontend">
+      <option name="closed" value="true" />
+      <created>1749244448027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749244448027</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
