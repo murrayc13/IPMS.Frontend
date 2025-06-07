@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d42af2-88f7-4953-8889-b3c24031ed28" name="Changes" comment="Making the base directory for IPMS.Frontend" />
+    <list default="true" id="d7d42af2-88f7-4953-8889-b3c24031ed28" name="Changes" comment="Small changes to naming conventions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/Templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IPMS.Frontend/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/IPMS.Frontend/main/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +56,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Git\IPMS.Frontend\IPMS.Frontend" />
+      <recent name="C:\Git\IPMS.Frontend\static" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +94,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749244448027</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Everything working for graph">
+      <option name="closed" value="true" />
+      <created>1749254269300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749254269300</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated styling for the graph and page">
+      <option name="closed" value="true" />
+      <created>1749255235445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749255235445</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Small changes to naming conventions">
+      <option name="closed" value="true" />
+      <created>1749255421855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749255421855</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +146,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Making the base directory for IPMS.Frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making the base directory for IPMS.Frontend" />
+    <MESSAGE value="Everything working for graph" />
+    <MESSAGE value="Updated styling for the graph and page" />
+    <MESSAGE value="Small changes to naming conventions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small changes to naming conventions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
