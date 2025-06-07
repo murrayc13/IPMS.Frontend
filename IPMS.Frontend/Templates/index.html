@@ -15,7 +15,7 @@
             <textarea id="asset_info" name="asset_info" rows="5">[[0.08, 0.075, 0.09, 0.065, 0.1, 0.07, 0.085],
 [0.15, 0.12, 0.18, 0.10, 0.20, 0.11, 0.16]]</textarea>
 
-            <label for="covariance">Covariance Matrix</label>
+            <label for="covariance">Correlation Matrix</label>
             <textarea id="covariance" name="covariance" rows="10">[[1, 0.8, 0.6, 0.3, 0.7, 0.5, 0.65],
 [0.8, 1, 0.55, 0.4, 0.6, 0.45, 0.5],
 [0.6, 0.55, 1, 0.35, 0.75, 0.5, 0.6],
@@ -29,7 +29,7 @@
 
         {% if api_data %}
         <div class="response">
-            <h2>📤 API Response:</h2>
+            <h2>📤 Minimum Variance Portfolio:</h2>
             <pre>{{ api_data|safe }}</pre>
         </div>
         {% endif %}
@@ -48,7 +48,7 @@
             const data = {
                 datasets: [
                     {
-                        label: 'Optimal Point',
+                        label: 'Minimum Variance Portfolio',
                         data: [{ x: point[0], y: point[1] }],
                         backgroundColor: '#007bff',
                         pointRadius: 7,
@@ -56,10 +56,11 @@
                         type: 'scatter'
                     },
                     {
-                        label: 'Portfolio Frontier',
+                        label: 'Minimum Variance Frontier',
                         data: linePoints,
                         borderColor: '#dc3545',
                         borderWidth: 2,
+                        background: '#dc3545',
                         fill: false,
                         tension: 0.25,
                         showLine: true,
